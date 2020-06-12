@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#container{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "."
+    "score" 
+    "buttons" 
+    "results" 
+    ".";
+    grid-template-rows: 5% 15% 15% 55% 5%;
+    row-gap: 0px;
+
+}
+
+#score-sheet{
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: score;
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+}
+
+.selections-list{
+    grid-area: buttons;
+    display:flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.selections{
+    widows: 50px;
+    height:50px;
+}
+
+#results{
+    grid-area: results;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 11px;
+}
+
+#player-box{
+    width: 70px;
+    height: 70px;
+    background-color: cornflowerblue;
+}
+
+#comp-box{
+    width: 70px;
+    height: 70px;
+    background-color: lightcoral ;
+}
+
+.who{
+    text-align: center;
+    font-size: 12px;
+}
+
+#player, #comp{
+    font-size: xx-large;
+    text-align: center;
+    text-justify: auto;
+}
+
+#result1, #result2{
+    border-style: solid;
+    border-width:3px;
+    border-color: black;
+}
+
+
