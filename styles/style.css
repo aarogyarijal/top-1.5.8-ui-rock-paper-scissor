@@ -23,9 +23,10 @@ body{
     "."
     "score" 
     "buttons" 
+    "selection-img"
     "results" 
     ".";
-    grid-template-rows: 5% 20% 15% 52% 3%;
+    grid-template-rows: 5% 20% 15% 14% 45% 1% ;
     row-gap: 0px;
 
 }
@@ -54,14 +55,27 @@ body{
     font-size: 3vmin;
     font-weight: 600;
 }
+#selection-image-box{
+    grid-area: selection-img;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20vmin;
+    
+}
+img{
+    margin: auto;
+    width: 30vmin;
+    height: 30vmin;
+}
 
 #results{
     grid-area: results;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 #player-box{
@@ -113,7 +127,7 @@ body{
     border-style: solid;
     border-width:3px;
     border-color: black;
-    font-size: 2.4vmin;
+    font-size: 0.1vmin;
 }
 
 

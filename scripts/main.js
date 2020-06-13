@@ -15,7 +15,8 @@ function play(){
 
     let resultclm = document.querySelector("#result1");
     
-
+    let compImage = document.querySelector('#comp-img');
+    let playerImage = document.querySelector('#player-img');
 
 
     const selectionsList = document.querySelectorAll(".selections-list")
@@ -26,23 +27,48 @@ function play(){
         if(!rawSelection) return;
         playerSelectionhc=rawSelection.toUpperCase();
         console.log(`S:${playerSelectionhc}`);
+        changeImageplayer(playerSelectionhc);
         game();
     }
+
+    function changeImagecomp(imageof){
+            
+            if(imageof === 'rock') {
+                compImage.setAttribute ('src','./images/rock.png');
+            }else if(imageof === 'paper') {
+                compImage.setAttribute ('src','./images/paper.png'); 
+            }else {
+                compImage.setAttribute ('src','./images/scissor.png');
+            }
+    }
+    function changeImageplayer(imageof){
+        
+        if(imageof === 'ROCK') {
+            playerImage.setAttribute ('src','./images/rock.png');
+        }else if(imageof === 'PAPER') {
+            playerImage.setAttribute ('src','./images/paper.png'); 
+        }else {
+            playerImage.setAttribute ('src','./images/scissor.png');
+        }
+}
 
     function computerPlay(){
         let randomizedNum = Math.random()*3
 
         if(randomizedNum<=1){
             console.log("Rock");
+            changeImagecomp("rock");
             return "ROCK";
             
         }
         else if(randomizedNum<=2){
             console.log("Paper");
+            changeImagecomp("paper");
             return "PAPER"; 
         }
         else{
             console.log("Scissor");
+            changeImagecomp("scissor");
             return "SCISSOR";
         }
     }
