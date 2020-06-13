@@ -1,10 +1,6 @@
 let playerScore = 0; //Stores Player's Score
 let computerScore = 0; //Stores Computer's Score
 
-
-play(); //Function to start playing
-
-
 console.log("start!")
 let playerSelectionhc="";  //Player's Selection in Higher Case
 let computerSelectionhc=""; //Computer's Selection in Higher Case
