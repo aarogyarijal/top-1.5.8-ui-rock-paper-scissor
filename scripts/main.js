@@ -1,10 +1,14 @@
+let playerScore = 0;
+let computerScore = 0;
+
+
 play();
+
 function play(){
     console.log("start!")
     let playerSelectionhc="";
     let computerSelectionhc="";
-    let playerScore = 0;
-    let computerScore = 0;
+
     let round = 0;
     let resultCounter = 0;
 
@@ -94,7 +98,7 @@ function play(){
         document.getElementById("player").textContent = playerScore;
         document.getElementById("comp").textContent = computerScore;
 
-        if (resultCounter>7){resultclm = document.querySelector("#result2");}
+        if (resultCounter>5){resultclm = document.querySelector("#result2");}
        
 
         if(computerScore+playerScore===5 && computerScore>playerScore){
@@ -102,7 +106,7 @@ function play(){
                 location=location;
             }
             else{
-                
+                return;
             }
         }
         else if(computerScore+playerScore===5 && computerScore<playerScore){
@@ -110,12 +114,13 @@ function play(){
                 location=location;
             }
             else{
-                
+                return;
             }
         }
 
         
     }
+    return;
 }
 
 

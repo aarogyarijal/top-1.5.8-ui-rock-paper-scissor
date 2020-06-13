@@ -25,7 +25,7 @@ body{
     "buttons" 
     "results" 
     ".";
-    grid-template-rows: 5% 15% 15% 55% 5%;
+    grid-template-rows: 5% 20% 15% 52% 3%;
     row-gap: 0px;
 
 }
@@ -47,8 +47,12 @@ body{
 }
 
 .selections{
-    widows: 50px;
-    height:50px;
+    width: fit-content;
+    height: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3vmin;
+    font-weight: 600;
 }
 
 #results{
@@ -58,36 +62,58 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    font-size: 11px;
 }
 
 #player-box{
-    width: 70px;
-    height: 70px;
+    width: 25vmin;
+    height: 90%;
     background-color: cornflowerblue;
+    display: grid;
+    grid-template-areas: "whop" "." "scorep";
+    grid-template-rows: 30% 5% 65%;
+
 }
 
 #comp-box{
-    width: 70px;
-    height: 70px;
+    width: 25vmin;
+    height: 90%;
     background-color: lightcoral ;
+    display: grid;
+    grid-template-areas: "whoc" "." "scorec";
+    grid-template-rows: 30% 5% 65%;
 }
 
-.who{
+.whop{
     text-align: center;
-    font-size: 12px;
+    grid-area: whop;
+    font-size: 4vmin;
 }
 
-#player, #comp{
-    font-size: xx-large;
+.whoc{
+    text-align: center;
+    grid-area: whoc;
+    font-size: 4vmin;    
+}
+
+#player{
     text-align: center;
     text-justify: auto;
+    grid-area: scorep;
+    font-size: 8vmin;
+}
+
+#comp{
+    text-align: center;
+    text-justify: auto;
+    grid-area: scorec;
+    font-size: 8vmin;
 }
 
 #result1, #result2{
     border-style: solid;
     border-width:3px;
     border-color: black;
+    font-size: 2.4vmin;
 }
 
 
