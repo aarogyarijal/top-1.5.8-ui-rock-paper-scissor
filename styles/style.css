@@ -37,45 +37,7 @@ body{
     grid-area: score;
     display: flex;
     flex-direction: row;
-    column-gap: 100px;
-}
-
-.selections-list{
-    grid-area: buttons;
-    display:flex;
-    justify-content: center;
-    column-gap: 100px;
-}
-
-.selections{
-    width: fit-content;
-    height: 40%;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 3vmin;
-    font-weight: 600;
-}
-#selection-image-box{
-    grid-area: selection-img;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    column-gap: 20vmin;
     
-}
-img{
-    margin: auto;
-    width: 30vmin;
-    height: 30vmin;
-}
-
-#results{
-    grid-area: results;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    text-align: left;
 }
 
 #player-box{
@@ -85,6 +47,7 @@ img{
     display: grid;
     grid-template-areas: "whop" "." "scorep";
     grid-template-rows: 30% 5% 65%;
+    margin-right: 100px;
 
 }
 
@@ -122,6 +85,47 @@ img{
     grid-area: scorec;
     font-size: 8vmin;
 }
+
+.selections-list{
+    grid-area: buttons;
+    display:flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.selections{
+    width: 7vw;
+    height: 7vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 100px;
+    font-size: 3vmin;
+    font-weight: 600;
+}
+
+#selection-image-box{
+    grid-area: selection-img;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20vmin;
+    
+}
+img{
+    margin: auto;
+    width: 30vmin;
+    height: 30vmin;
+}
+
+#results{
+    grid-area: results;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+}
+
 
 #result1, #result2{
     border-style: solid;
