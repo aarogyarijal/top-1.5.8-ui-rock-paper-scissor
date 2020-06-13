@@ -47,7 +47,7 @@ function changeImageplayer(imageof){
     }else {
         playerImage.setAttribute ('src','./images/scissor.png');
     }
-
+}
 
 function game(){
     round++;
@@ -149,8 +149,7 @@ function game(){
 
         
     }
-    return;
-}
+
 
 
 
