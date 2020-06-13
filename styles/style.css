@@ -108,13 +108,14 @@ body{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    column-gap: 20vmin;
+    
     
 }
 img{
     margin: auto;
     width: 30vmin;
     height: 30vmin;
+    margin-right: 100px;
 }
 
 #results{
